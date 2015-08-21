@@ -1,6 +1,6 @@
-FROM ipython/ipython:3.x
+FROM ipython/scipystack
 
-MAINTAINER IPython Project <ipython-dev@scipy.org>
+MAINTAINER ASI <info@theasi.co>
 
 VOLUME /notebooks
 WORKDIR /notebooks
@@ -13,8 +13,6 @@ RUN apt-get update
 # Install postgres dependencies
 RUN apt-get -y install libpq-dev
 
-# Install matplotlib
-RUN apt-get -y install libfreetype6-dev libxft-dev
 
 # You can mount your own SSL certs as necessary here
 ENV PEM_FILE /key.pem
