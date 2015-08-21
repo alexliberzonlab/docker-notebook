@@ -21,7 +21,7 @@ ENV USE_HTTP 0
 
 # Get pip to download and install requirements:
 ADD requirements.txt /
-RUN pip install -r /requirements.txt
+RUN /usr/local/bin/pip2.7 install -r /requirements.txt
 
 ADD notebook.sh /
 RUN chmod u+x /notebook.sh
