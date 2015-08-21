@@ -13,6 +13,9 @@ RUN apt-get update
 # Install postgres dependencies
 RUN apt-get -y install libpq-dev
 
+# Install matplotlib
+RUN apt-get -y install python-matplotlib
+
 # You can mount your own SSL certs as necessary here
 ENV PEM_FILE /key.pem
 # $PASSWORD will get `unset` within notebook.sh, turned into an IPython style hash
