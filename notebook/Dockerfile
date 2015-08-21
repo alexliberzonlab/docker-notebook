@@ -14,7 +14,7 @@ RUN apt-get update
 RUN apt-get -y install libpq-dev
 
 # Install matplotlib
-RUN apt-get -y install python-matplotlib
+RUN apt-get -y install libfreetype6-dev libxft-dev
 
 # You can mount your own SSL certs as necessary here
 ENV PEM_FILE /key.pem
