@@ -21,4 +21,6 @@ if [ $USE_HTTP -ne 0 ]; then
   CERTFILE_OPTION=""
 fi
 
+alias pip=/usr/local/bin/pip2.7
+
 ipython notebook --no-browser --port 8888 --ip=* $CERTFILE_OPTION --NotebookApp.password="$HASH"

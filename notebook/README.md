@@ -8,7 +8,7 @@ Docker container for the IPython notebook (single user).
 Assuming you have docker installed, run this to start up a notebook server over HTTPS.
 
 ```
-docker run -d -p 443:8888 --name asi-notebook -e "PASSWORD=MakeAPassword" theasi/asi-notebook
+docker run -d -v [absolute-path]:/notebooks -p 443:8888 --name asi-notebook -e "PASSWORD=MakeAPassword" theasi/asi-notebook
 ```
 
 You'll now be able to access your notebook at https://localhost with password MakeAPassword (please change the environment variable above).
