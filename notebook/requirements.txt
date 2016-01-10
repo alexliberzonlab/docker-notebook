@@ -5,5 +5,4 @@ sh==1.11
 PyBrain==0.3
 idx2numpy==1.1.0
 boto3==1.2.2
-gmaps==0.1.6
 pyyaml==3.11
