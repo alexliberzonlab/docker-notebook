@@ -27,7 +27,7 @@ This image looks for `/key.pem`. If it doesn't exist a self signed certificate w
 
 Example:
 ```
-cat hostname.key hostname.pub.cert intermidiate.cert > hostname.pem
+cat hostname.key hostname.pub.cert intermediate.cert > hostname.pem
 ```
 
 Then you would mount this file to the docker container:
